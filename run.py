@@ -34,29 +34,29 @@ def main():
             print ("Enter your password")
             password=input()
 
-            save_accountcredential (create_accountcredential(socialnetworkaccount, username, password)) # all this that the user has input through the create_accountcredential process, we save (create and save new accountcredential) ?
+            save_accountcredential (create_accountcredential(socialnetworkaccount, username, password)) # ? all this that the user has input through the create_accountcredential process, we save (create and save new accountcredential) ?
             print('\n')
-            print(f"New accountcredential {socialnetworkaccount} for {username} created") # While other string literals always have a constant value, formatted strings are really expressions evaluated at run time
+            print(f"New accountcredential {socialnetworkaccount} for {username} created") # ? While other string literals always have a constant value, formatted strings are really expressions evaluated at run time
             print('\n')
 
-        elif short_code=='cp': # if user inputs ca
-            print ("New Accountcredential")
-            print ("-"*10) # print --------------
+        # elif short_code=='cp': # if user inputs ca
+        #     print ("New Accountcredential")
+        #     print ("-"*10) # print --------------
 
-            print ("Which social network account?")
-            socialnetworkaccount=input() # assign input (user's response) to socialnetworkaccount
+        #     print ("Which social network account?")
+        #     socialnetworkaccount=input() # assign input (user's response) to socialnetworkaccount
 
-            print ("Enter your username")
-            username=input()
+        #     print ("Enter your username")
+        #     username=input()
 
-            print ("Here is your password")
-            create_password(length) #?
-            print("Password is:", password)
+        #     print ("Here is your password")
+        #     create_password(length) #?
+        #     print("Password is:", password)
 
-            save_accountcredential (create_accountcredential(socialnetworkaccount, username, password)) # all this that the user has input through the create_accountcredential process, we save (create and save new accountcredential) ?
-            print('\n')
-            print(f"New accountcredential {socialnetworkaccount} for {username} created") # While other string literals always have a constant value, formatted strings are really expressions evaluated at run time
-            print('\n')
+        #     save_accountcredential (create_accountcredential(socialnetworkaccount, username, password)) # all this that the user has input through the create_accountcredential process, we save (create and save new accountcredential) ?
+        #     print('\n')
+        #     print(f"New accountcredential {socialnetworkaccount} for {username} created") # While other string literals always have a constant value, formatted strings are really expressions evaluated at run time
+        #     print('\n')
 
         elif short_code== 'da':
             if display_all_accountcredentials(): # ? check if display_all_accountcredentials has any result?
@@ -78,13 +78,10 @@ def main():
 
         elif short_code=='ex':
             print ("Bye ...")
-            break
+            break # ?
 
         else:
             print ("I really did not get that.")
-
-
-                
 
 
 

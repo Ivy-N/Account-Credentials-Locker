@@ -7,7 +7,7 @@ class TestAccountcredential (unittest.TestCase): # create a subclass called Test
         self.new_accountcredential = Accountcredential("Instagram","JamesM","jamesm") # create accountcredential object. We have instructed our personal setUp() method to create a new instance of Accountcredential class, before each test method declared, and store it in an instance variable in the test class self.new_accountcredential.
 
     def tearDown(self): # tearDown method that does clean up after each test case has run (so that eg save_multiple_contact does not run save_contact before running itself). Just like the setUp() method the tearDown() method executes a set of instructions after *every test*. In the tearDown() method we assign the accountcredential_list list in the Accountcredential class as an empty list. This helps us get accurate test results every time a new test case runs.
-        Accountcredential.accountcredential_list = []
+        Accountcredential.accountcredential_list = [] # ?
 
     def test_init(self): # test_init test case (case=function?) to test if the object is initialized properly. Tests are defined with methods that start with test_, (this is just proper convention to define your tests). 
         self.assertEqual(self.new_accountcredential.socialnetworkaccount,"Instagram") # self.assertEqual() is a TestCase method that checks for an expected result. The first argument is the expected result and the second argument is the result that is actually gotten. Here, we are checking if the details of our new object is what we actually inputted.
